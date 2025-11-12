@@ -1,0 +1,109 @@
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #0b0b0b;
+  color: #9e030b;
+  margin: 10;
+  padding: 0;
+}
+
+header {
+  background: url("./154.jpg") no-repeat center;
+  background-size: contain;
+  height: 200px;
+  background-color: rgb(114, 26, 26);
+}
+
+nav {
+  background-color: #111;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 0 10px #e50914;
+}
+
+nav a {
+  color: #e50914;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #e50914;
+}
+
+main {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #e50914;
+}
+
+h1, h2 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px #e50914;
+}
+
+p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.character {
+  background-color: #111;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 10px #e50914;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff1a1a;
+}
+
+.character img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #666;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* Cool Upside Down glowing effect */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: "radial-gradient(circle at center, rgba(229, 9, 20, 0.1), transparent 70%);
+  z-index: -1;
+  animation: pulse 5s infinite alternate;"
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  100% { opacity: 0.6; }
+}
